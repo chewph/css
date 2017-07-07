@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Electronic Medical Records</title>
+	<base href="/">
+	<link rel="icon" type="image/x-icon" href="assets/layout/images/Edu-EMR.png">
+	<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+
+	<!-- Layout CSS -->
+	<link id="theme-css" rel="stylesheet" type="text/css" href="assets/theme/theme-purple-amber.css">
+	<link id="layout-css" rel="stylesheet" type="text/css" href="assets/layout/css/layout-purple-amber.css">
+</head>
+<body>
+<div class="layout-wrapper">
+	<div #layoutContainer class="layout-container">
+         
+         <div class="topbar clearfix">
+              <div class="topbar-left">
+                  <div class="logo"></div>
+              </div>
+		    
+		   <div class="patient-bar">
+              		Wong Ying || S1234567F || Female || 160cm || 55kg
+		   </div>
+		    
+             <div class="topbar-right">
+                  <!--Overlay menu button-->
+                   <a id="menu-button" href="#" (click)="app.onMenuButtonClick($event)">
+                      <i></i>
+               	</a>
+
+                  <!-- 3-bar menu shown when app window is resized smaller-->
+                  <a id="topbar-menu-button" href="#" (click)="app.onTopbarMenuButtonClick($event)">
+                      <i class="material-icons">menu</i>
+                  </a>
+
+                  <!-- Menu items, if app.profileMode ==='top is at top-->
+                  <ul class="topbar-items animated fadeInDown">
+                      <!--Switch to horizontal view-->
+                      <li #messages [ngClass]="{'active-top-menu':app.activeTopbarItem === horizontalMsg}">
+                         <i class="topbar-icon material-icons animated swing">border_horizontal</i>       
+                  </ul>
+		   </div>
+		
+          </div>
+		
+
+          <div class="layout-menu">
+               <div #layoutMenuScroller class="nano">
+                   <div class="nano-content menu-scroll-content">
+                         <inline-profile>Inline profile</inline-profile>
+                         <ul class="ultima-menu ultima-main-menu clearfix" visible="true">
+                              Left-menu list
+                         </ul>
+                   </div>
+               </div>
+          </div>
+
+          <div class="layout-main">
+               <p>Main layout</p>
+          </div>
+     </div>
+</div>
+</body>
+</html>
