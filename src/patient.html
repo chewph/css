@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Test Grid</title>
+	<base href="/">
+	<link rel="icon" type="image/x-icon" href="assets/layout/images/Edu-EMR.png">
+	<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+
+	<script src="assets/primeng/components/inputmask/inputmask.js"></script>
+	<!-- Layout CSS -->
+	<link id="primeng-css" rel="stylesheet" type="text/css" href="assets/primeng/resources/primeng.css">
+	<link id="primeng-min-css" rel="stylesheet" type="text/css" href="assets/primeng/resources/primeng.min.css">
+	<link id="theme-css" rel="stylesheet" type="text/css" href="assets/theme/theme-purple-amber.css">
+	<link id="layout-css" rel="stylesheet" type="text/css" href="assets/layout/css/layout-purple-amber.css">
+</head>
+
+<body>
+	<div class="ui-fluid ">
+		<div class="ui-g">
+			<div class="ui-g-12">
+				<div class="card card-w-title">
+					<section id="Test Section"></section>
+					<h2>Grid Test</h2>
+
+					<div class="ui-g ui-g-nopad form-group">
+						<!--Emergency Contact-->
+						<div class="ui-g-12 ui-md-6 ui-lg-3" >
+							<label for="admissionDate">Admission Date</label>
+						</div>
+						<div class="ui-g-12 ui-md-6 ui-lg-3" >
+							<span class="md-inputfield">
+							   <input id="date" type="text" pInputText/>
+							   <label>Date</label>
+						    </span>
+						</div>
+						<div class="ui-g-12 ui-md-6 ui-lg-3">
+							<label for="accompaniedBy">Accompanied By</label>
+						</div>
+						<div class="ui-g-12 ui-md-6 ui-lg-3">
+							<span class="md-inputfield">
+							   <input id="accompaniedBy" type="text" pInputText/>
+							   <label>Accompanied By</label>
+						    </span>
+						</div>
+					</div>
+
+
+
+					<div class="ui-g ui-g-nopad">
+						<div class="ui-g-12 ui-lg-4" style="width: 170px">
+							<label for="admissions">Type of Admissions</label>
+						</div>
+						
+						<div class="ui-g-12 ui-lg-4" style="width: 220px">
+							<input type="checkbox" name="vehicle" value="Bike">Radiological documents
+						</div>
+						<div class="ui-g-12 ui-lg-4">
+								<input type="checkbox" name="vehicle" value="Bike">Documents from other hospitals
+						</div>
+			
+
+					</div>
+					<div class="ui-g-12">
+						<input id="contactName" value="Contact" type="text" />
+
+					</div>
+				</div>
+			</div>
+
+			<div class="ui-g-12">
+				<div class="card card-w-title">
+					<section id="emergencyContact"></section>
+					<h2>Emergency Contact</h2>
+
+					<div class="ui-g ui-g-nopad form-group">
+						<!--Emergency Contact-->
+						<div class="ui-g-12 ui-md-2">
+							<label for="contactName">Contact Name</label>
+							<input type="checkbox" name="vehicle" value="Bike">Bike
+							<input type="checkbox" name="vehicle" value="Car" checked>Car
+						</div>
+						<div class="ui-g-12 ui-md-4 ui-g-nopad">
+							<span class="md-inputfield">
+							   <input id="contactName" disabled type="text" pInputText/>
+							   <label>Name</label>
+						    </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ui-g-12">
+				<div class="card card-w-title">
+					<section id="Info"></section>
+					<h2>Information Obtained From</h2>
+
+					<div class="ui-g ui-g-nopad form-group">
+						<!--Information Obtained from-->
+						<div class="ui-g-12 ui-md-2">
+							<label for="infoName">Name</label>
+						</div>
+						<div class="ui-g-12 ui-md-4 ui-g-nopad">
+							<span class="md-inputfield">
+							   <input id="infoName" disabled="true" type="text" pInputText/>
+							   <label>Name</label>
+						    </span>
+						</div>
+					</div>
+
+					<div class="ui-g ui-g-nopad form-group">
+						<!--Information Obtained from-->
+						<div class="ui-g-12 ui-md-2">
+							<label for="infoName">Name</label>
+						</div>
+						<div class="ui-g-12 ui-md-4 ui-g-nopad">
+							<span class="md-inputfield">
+							   <input id="infoName" disabled="true" type="text" pInputText/>
+							   <label>Name</label>
+						    </span>
+						</div>
+					</div>
+
+					<div class="ui-g ui-g-nopad form-group">
+						<!--Information Obtained from-->
+						<div class="ui-g-12 ui-md-2">
+							<label for="infoName">Name</label>
+						</div>
+						<div class="ui-g-12 ui-md-4 ui-g-nopad">
+							<span class="md-inputfield">
+							   <input id="infoName" disabled="true" type="text" pInputText/>
+							   <label>Name</label>
+						    </span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div style="height:3000px;"></div>
+
+
+		</div>
+
+		<div style="height:3000px;"></div>
+		<div class="ui-g-12 ui-g-6">
+			<div class="card">
+				<h1>Info Obtained</h1>
+
+			</div>
+		</div>
+		<section id="infoObtained"></section>
+		<p>Info Obtained</p>
+
+	</div>
+
+
+</body>
+
+</html>
